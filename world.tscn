@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://dinftyl0lsttn"]
+
+[ext_resource type="PackedScene" uid="uid://eqe0r3fcow3p" path="res://Personajes/Warrior.tscn" id="1_fj7yv"]
+[ext_resource type="PackedScene" uid="uid://cev3wtqae0gku" path="res://Personajes/Archer.tscn" id="2_tlwt5"]
+[ext_resource type="PackedScene" uid="uid://c47pscy6b2ubr" path="res://Personajes/Lancer.tscn" id="3_tlwt5"]
+[ext_resource type="Texture2D" uid="uid://ds0v5ga8t8lfw" path="res://Escenario.png" id="4_aqk2v"]
+
+[node name="World" type="Node2D" unique_id=1193095160]
+
+[node name="Guerrera" parent="." unique_id=878278025 instance=ExtResource("1_fj7yv")]
+position = Vector2(-84, -4)
+
+[node name="Camera2D" type="Camera2D" parent="Guerrera" unique_id=2046520093]
+position = Vector2(84, 4)
+zoom = Vector2(3, 3)
+
+[node name="PurpleLancer" parent="." unique_id=1297694403 instance=ExtResource("2_tlwt5")]
+position = Vector2(74, 46)
+
+[node name="BlackArcher" parent="." unique_id=2034493356 instance=ExtResource("3_tlwt5")]
+position = Vector2(19, -67)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1245044143]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1122120936]
+z_index = -5
+position = Vector2(2.3750076, 1.1875229)
+scale = Vector2(0.7238991, 0.9630534)
+texture = ExtResource("4_aqk2v")
+
+[node name="Archer" parent="." unique_id=1738892503 instance=ExtResource("3_tlwt5")]
+position = Vector2(138, -54)
+
+[node name="Archer2" parent="." unique_id=486428653 instance=ExtResource("2_tlwt5")]
+position = Vector2(144, 85)
+
+[node name="Archer3" parent="." unique_id=876939198 instance=ExtResource("3_tlwt5")]
+position = Vector2(79, -22)
+
+[node name="Archer4" parent="." unique_id=548596153 instance=ExtResource("2_tlwt5")]
+position = Vector2(31, 80)
